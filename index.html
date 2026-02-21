@@ -1,1 +1,68 @@
-test
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arcade</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #0f0f0f, #1b1b1b);
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      padding: 30px;
+      font-size: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #222;
+      padding: 30px;
+      border-radius: 15px;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🎮 Private Arcade</h1>
+
+<div class="grid">
+  <div class="card">
+    <a href="amanda/">Amanda</a>
+  </div>
+
+  <div class="card">
+    <a href="baldi/">Baldi</a>
+  </div>
+
+  <div class="card">
+    <a href="omori/">OMORI</a>
+  </div>
+</div>
+
+</body>
+</html>
