@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Education IXL</title>
+<title>stupid game site ❄️</title>
 
 <style>
 body, html {
@@ -74,7 +74,7 @@ nav button:hover {
   margin-top: 8px;
 }
 
-/* GRID */
+/* GAME GRID */
 .game-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -87,15 +87,17 @@ nav button:hover {
 .game-card {
   background: #22242b;
   border-radius: 12px;
-  padding: 18px;
+  padding: 14px;
   text-align: center;
   transition: 0.3s ease;
-  cursor: pointer;
 }
 
-.game-card:hover {
-  transform: scale(1.07);
-  background: #2a2d38;
+.game-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .game-card a {
@@ -103,6 +105,12 @@ nav button:hover {
   color: #fff;
   font-size: 1.1rem;
   font-weight: 600;
+  display: block;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  background: #2a2d38;
 }
 
 /* SETTINGS */
@@ -126,7 +134,7 @@ nav button:hover {
   background: #2a2d38;
 }
 
-/* SNOW CANVAS */
+/* SNOW */
 #snow {
   position: fixed;
   top: 0;
@@ -159,11 +167,30 @@ nav button:hover {
 <!-- GAMES -->
 <div id="games" class="section">
   <div class="game-grid">
-    <div class="game-card"><a href="amanda-the-adventurer/">Amanda</a></div>
-    <div class="game-card"><a href="play.html?game=baldi-plus">Baldi Plus</a>
-    <div class="game-card"><a href="omori-fixed/">OMORI</a></div>
-    <div class="game-card"><a href="hotline-miami/">Hotline Miami</a></div>
-    <div class="game-card"><a href="play.html?game=yandere-sim">Yandere Simulator</a>    
+    <div class="game-card">
+      <img src="thumbnails/amanda.png" alt="Amanda">
+      <a href="amanda-the-adventurer/">Amanda</a>
+    </div>
+
+    <div class="game-card">
+      <img src="thumbnails/baldi.png" alt="Baldi Plus">
+      <a href="play.html?game=baldi-plus">Baldi Plus</a>
+    </div>
+
+    <div class="game-card">
+      <img src="thumbnails/omori.png" alt="OMORI">
+      <a href="omori-fixed/">OMORI</a>
+    </div>
+
+    <div class="game-card">
+      <img src="thumbnails/hotline.png" alt="Hotline Miami">
+      <a href="hotline-miami/">Hotline Miami</a>
+    </div>
+
+    <div class="game-card">
+      <img src="thumbnails/yandere.png" alt="Yandere Simulator">
+      <a href="play.html?game=yandere-sim">Yandere Simulator</a>
+    </div>
   </div>
 </div>
 
